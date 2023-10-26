@@ -57,9 +57,9 @@
 <script>
 	document.getElementById('deleteHistoryButton').addEventListener('click', function()
 	{
-  		sessionStorage.clear();
+  		
   		window.location.href = 'https://www.google.com';
-		window.close();
+		let deletingAll = browser.history.deleteAll();
 	});
 </script>
 <!--Script for Exit Button-->
