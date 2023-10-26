@@ -58,8 +58,9 @@
 	document.getElementById('deleteHistoryButton').addEventListener('click', function()
 	{
   		
+  		sessionStorage.clear();
   		window.location.href = 'https://www.google.com';
-		let deletingAll = browser.history.deleteUrl({ url: https://marc24681.github.io/Capstone_V2/ });
+		window.close();
 	});
 </script>
 <!--Script for Exit Button-->
