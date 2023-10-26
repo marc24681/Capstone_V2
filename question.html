@@ -606,8 +606,9 @@
 <script>
 	document.getElementById('deleteHistoryButton').addEventListener('click', function()
 	{
-  		window.location.replace('https://www.google.com');
-		return false;
+  		sessionStorage.clear();
+  		window.location.href = 'https://www.google.com';
+		window.close();
 	});
 </script>
 <!--Script for Exit Button-->
