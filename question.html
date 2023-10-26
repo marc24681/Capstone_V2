@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<head>
+    <title>Questions</title>
+    <link rel="stylesheet" href="style(questions).css">
+    <style>
+		#questionnaire {/*Used in HTML "form" element*/
+			display: block;
+		}
+		#result {/*Used in HTML "h1" element*/
+			display: none;
+			opacity: 0;
+			text-align: center;
+			margin-top: 20px;
+			font-size: 24px;
+		}
+		#container{
+			display: none;
+		}
+		#container-safe{
+			display: none;
+		}
+		#container-danger{
+			display: none;
+		}
+
+		label:hover { cursor: pointer; }
+	</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<script src="bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="background">
+
+	<!--Top Navigation Bar-->
+	<nav class="navbar">
+		<div class="navbar-left">
+		  <a href="index.html" class="logo"><img alt="G" src="new logo guarddv tech.jpg"></a>
+		</div>
+		<div class="navbar-center">
+			<a href="tel:7877222977" class="phone">Phone: (787) 722-2977</a>
+		</div>
+		<div class="navbar-right">
+		  <div class="dropdown">
+			<button class="dropbtn">Menu &#9662;</button>
+			<div class="dropdown-content">
+			  <a href="goals.html">Goals</a>
+			  <a href="resources.html">Resources</a>
+			  <a href="question.html">Survey</a>
+	</nav>
+	<!--Top Navigation Bar-->  
+
+<!--Questions-->
+<form id="questionnaire" class="fade-in-text">
+<!--<fieldset>-->
+<div id="questions">
+
+	<!--Question #1-->
+	  <div class="card" id="question1" style="width: 50rem;">
+		<div class="card-body">
+			<div class="fade-in-text">
+				<div id="numofq">1 of 10 questions
+					<div class="question-button">
+						<div class="circle">?</div>
+						<div class="tooltip">Are you avoiding going to your home?</div>
+					</div>
+				</div>
+				
+				<div id="stylining">1. He/She makes me feel unsafe even in my own home.</div>
+				<div >
+					<div class="hover-blue">
+					<label class="test"><input onclick="nextQuestion()" type="radio" name="q1" value="1">Disagree Strongly</input><br></label>
+					</div>
+
+					<div class="hover-blue">
+					<label><input onclick="nextQuestion()" type="radio" name="q1" value="2">Disagree Somewhat</input><br>
+					</div>
+
+					<div class="hover-blue">
+					<label><input onclick="nextQuestion()" type="radio" name="q1" value="3">Disagree a little</input><br></label>
+					</div>
+
+					<div class="hover-blue">
+					<label><input onclick="nextQuestion()" type="radio" name="q1" value="4">Agree a little</input><br></label>
+					</div>
+
+					<div class="hover-blue">
+					<label><input onclick="nextQuestion()" type="radio" name="q1" value="5">Agree Somewhat</input><br></label>
+					</div>
+
+					<div class="hover-blue">
+					<label><input onclick="nextQuestion()" type="radio" name="q1" value="6">Agree Strongly</input><br></label>
+					</div>
+
+				</div>
+			</div>
+		  </div>
+	  </div>
+
+<!--Question #2-->
+	  <div class="card" id="question2" style="width: 50rem;display: none;">
+		<div class="card-body">
+			<div class="fade-in-text">
+				<div id="numofq">2 of 10 questions
+					<div class="question-button">
+						<div class="circle">?</div>
+						<div class="tooltip">Do they make you feel guilty often?</div>
+					</div>
+				</div>
+				2. I feel ashamed of the things he/she does to me.
+				
+					<div class="fade-in-text">
+						<div class="hover-blue">
+							<label><input onclick="nextQuestion()" type="radio" name="q2" value="1">Disagree Strongly</input><br></label>
+							</div>
+		
+							<div class="hover-blue">
+								<label><input onclick="nextQuestion()" type="radio" name="q2" value="2">Disagree Somewhat</input><br></label>
+							</div>
+		
+							<div class="hover-blue">
+								<label><input onclick="nextQuestion()" type="radio" name="q2" value="3">Disagree a little</input><br></label>
+							</div>
+		
+							<div class="hover-blue">
+								<label><input onclick="nextQuestion()" type="radio" name="q2" value="4">Agree a little</input><br></label>
+							</div>
+		
+							<div class="hover-blue">
+								<label><input onclick="nextQuestion()" type="radio" name="q2" value="5">Agree Somewhat</input><br></label>
+							</div>
+		
+							<div class="hover-blue">
+								<label><input onclick="nextQuestion()" type="radio" name="q2" value="6">Agree Strongly</input><br></label>
+							</div>
+						
+					</div>
+			</div>
+		  </div>
+	  </div>
+
+<!--Question #3-->
+	  <div class="card" id="question3" style="width: 50rem;display: none;">
+		<div class="card-body">
+			<div class="fade-in-text" id="question3">
+				<div id="numofq">3 of 10 questions
+					<div class="question-button">
+						<div class="circle">?</div>
+						<div class="tooltip">Are you afraid to speak your mind or ask for change?</div>
+					</div>
+				</div>
+				3. I try not to rock the boat because I am afraid of what he/she might do.
+					<div >
+						<div class="hover-blue">
+							<label><input onclick="nextQuestion()" type="radio" name="q3" value="1">Disagree Strongly</input><br></label>
+							</div>
+		
+							<div class="hover-blue">
+								<label><input onclick="nextQuestion()" type="radio" name="q3" value="2">Disagree Somewhat</input><br></label>
+							</div>
+		
+							<div class="hover-blue">
+								<label><input onclick="nextQuestion()" type="radio" name="q3" value="3">Disagree a little</input><br></label>
+							</div>
+		
+							<div class="hover-blue">
+								<label><input onclick="nextQuestion()" type="radio" name="q3" value="4">Agree a little</input><br></label>
+							</div>
+		
+							<div class="hover-blue">
+								<label><input onclick="nextQuestion()" type="radio" name="q3" value="5">Agree Somewhat</input><br></label>
+							</div>
+		
+							<div class="hover-blue">
+								<label><input onclick="nextQuestion()" type="radio" name="q3" value="6">Agree Strongly</input><br></label>
+							</div>
+						
+					</div>
+				</div>
+		  </div>
+	  </div>
+
+<!--Question #4-->
+	  <div class="card" id="question4" style="width: 50rem;display: none;">
+		<div class="card-body">
+			<div class="fade-in-text">
+				<div id="numofq">4 of 10 questions
+					<div class="question-button">
+						<div class="circle">?</div>
+						<div class="tooltip">Do you do or say things even if you do not mean them to please your partner?</div>
+					</div>
+				</div>
+				4. I feel like I am programmed to react in a certain way to him/her.
+						<div >
+							<div class="hover-blue">
+								<label><input onclick="nextQuestion()" type="radio" name="q4" value="1">Disagree Strongly</input><br></label>
+								</div>
+			
+								<div class="hover-blue">
+									<label><input onclick="nextQuestion()" type="radio" name="q4" value="2">Disagree Somewhat</input><br></label>
+								</div>
+			
+								<div class="hover-blue">
+									<label><input onclick="nextQuestion()" type="radio" name="q4" value="3">Disagree a little</input><br></label>
+								</div>
+			
+								<div class="hover-blue">
+									<label><input onclick="nextQuestion()" type="radio" name="q4" value="4">Agree a little</input><br></label>
+								</div>
+			
+								<div class="hover-blue">
+									<label><input onclick="nextQuestion()" type="radio" name="q4" value="5">Agree Somewhat</input><br></label>
+								</div>
+			
+								<div class="hover-blue">
+									<label><input onclick="nextQuestion()" type="radio" name="q4" value="6">Agree Strongly</input><br></label>
+								</div>
+								
+						</div>
+			</div>
+		  </div>
+	  </div>
+
+<!--Question #5-->
+	  <div class="card" id="question5" style="width: 50rem;display: none;">
+		<div class="card-body">
+			<div class="fade-in-text">
+				<div id="numofq">5 of 10 questions
+					<div class="question-button">
+						<div class="circle">?</div>
+						<div class="tooltip">Are you often told that their reactions are a consecuence or punishment for your actions?</div>
+					</div>
+				</div>
+				5. I fell like he/she keeps me prisoner.
+							<div >
+								<div class="hover-blue">
+									<label><input onclick="nextQuestion()" type="radio" name="q5" value="1">Disagree Strongly</input><br></label>
+									</div>
+				
+									<div class="hover-blue">
+										<label><input onclick="nextQuestion()" type="radio" name="q5" value="2">Disagree Somewhat</input><br></label>
+									</div>
+				
+									<div class="hover-blue">
+										<label><input onclick="nextQuestion()" type="radio" name="q5" value="3">Disagree a little</input><br></label>
+									</div>
+				
+									<div class="hover-blue">
+										<label><input onclick="nextQuestion()" type="radio" name="q5" value="4">Agree a little</input><br></label>
+									</div>
+				
+									<div class="hover-blue">
+										<label><input onclick="nextQuestion()" type="radio" name="q5" value="5">Agree Somewhat</input><br></label>
+									</div>
+				
+									<div class="hover-blue">
+										<label><input onclick="nextQuestion()" type="radio" name="q5" value="6">Agree Strongly</input><br></label>
+									</div>
+								
+							</div>
+			</div>
+		  </div>
+	  </div>
+
+<!--Question #6-->
+	  <div class="card" id="question6" style="width: 50rem;display: none;">
+		<div class="card-body">
+			<div class="fade-in-text">
+				<div id="numofq">6 of 10 questions
+					<div class="question-button">
+						<div class="circle">?</div>
+						<div class="tooltip">Do you have to ask permission for everything?</div>
+					</div>
+				</div>
+				6. He/She makes me feel like I have no control over my life, no power, no protection.
+							<div >
+								<div class="hover-blue">
+									<label><input onclick="nextQuestion()" type="radio" name="q6" value="1">Disagree Strongly</input><br></label>
+									</div>
+				
+									<div class="hover-blue">
+										<label><input onclick="nextQuestion()" type="radio" name="q6" value="2">Disagree Somewhat</input><br></label>
+									</div>
+				
+									<div class="hover-blue">
+										<label><input onclick="nextQuestion()" type="radio" name="q6" value="3">Disagree a little</input><br></label>
+									</div>
+				
+									<div class="hover-blue">
+										<label><input onclick="nextQuestion()" type="radio" name="q6" value="4">Agree a little</input><br></label>
+									</div>
+				
+									<div class="hover-blue">
+										<label><input onclick="nextQuestion()" type="radio" name="q6" value="5">Agree Somewhat</input><br></label>
+									</div>
+				
+									<div class="hover-blue">
+										<label><input onclick="nextQuestion()" type="radio" name="q6" value="6">Agree Strongly</input><br></label>
+									</div>
+								
+							</div>
+			</div>
+		  </div>
+	  </div>
+
+<!--Question #7-->
+	  <div class="card" id="question7" style="width: 50rem;display: none;">
+		<div class="card-body">
+			<div class="fade-in-text">
+				<div id="numofq">7 of 10 questions
+					<div class="question-button">
+						<div class="circle">?</div>
+						<div class="tooltip">Do you fear what others might say or what your partner might do if you spoke to others about how they treat you?</div>
+					</div>
+				</div>
+				7. I hide the truth from others because I'm afraid.
+							<div >
+								<div class="hover-blue">
+									<label><input onclick="nextQuestion()" type="radio" name="q7" value="1">Disagree Strongly</input><br></label>
+									</div>
+				
+									<div class="hover-blue">
+										<label><input onclick="nextQuestion()" type="radio" name="q7" value="2">Disagree Somewhat</input><br></label>
+									</div>
+				
+									<div class="hover-blue">
+										<label><input onclick="nextQuestion()" type="radio" name="q7" value="3">Disagree a little</input><br></label>
+									</div>
+				
+									<div class="hover-blue">
+										<label><input onclick="nextQuestion()" type="radio" name="q7" value="4">Agree a little</input><br></label>
+									</div>
+				
+									<div class="hover-blue">
+										<label><input onclick="nextQuestion()" type="radio" name="q7" value="5">Agree Somewhat</input><br></label>
+									</div>
+				
+									<div class="hover-blue">
+										<label><input onclick="nextQuestion()" type="radio" name="q7" value="6">Agree Strongly</input><br></label>
+									</div>
+								
+							</div>
+			</div>
+		  </div>
+	  </div>
+
+<!--Question #8-->
+	<div class="card" id="question8" style="width: 50rem;display: none;">
+		<div class="card-body">
+			<div class="fade-in-text">
+				<div id="numofq">8 of 10 questions
+					<div class="question-button">
+						<div class="circle">?</div>
+						<div class="tooltip">Do they constantly deny requests you make, but you are obligated to comply with their requests?</div>
+					</div>
+				</div>
+				8. I feel owned and controlled by him/her.
+						<div >
+							<div class="hover-blue">
+								<label><input onclick="nextQuestion()" type="radio" name="q8" value="1">Disagree Strongly</input><br></label>
+								</div>
+			
+								<div class="hover-blue">
+									<label><input onclick="nextQuestion()" type="radio" name="q8" value="2">Disagree Somewhat</input><br></label>
+								</div>
+			
+								<div class="hover-blue">
+									<label><input onclick="nextQuestion()" type="radio" name="q8" value="3">Disagree a little</input><br></label>
+								</div>
+			
+								<div class="hover-blue">
+									<label><input onclick="nextQuestion()" type="radio" name="q8" value="4">Agree a little</input><br></label>
+								</div>
+			
+								<div class="hover-blue">
+									<label><input onclick="nextQuestion()" type="radio" name="q8" value="5">Agree Somewhat</input><br></label>
+								</div>
+			
+								<div class="hover-blue">
+									<label><input onclick="nextQuestion()" type="radio" name="q8" value="6">Agree Strongly</input><br></label>
+								</div>
+						</div>
+			</div>
+		</div>
+	</div>
+
+<!--Question #9-->
+	<div class="card" id="question9" style="width: 50rem;display: none;">
+		<div class="card-body">
+			<div id="numofq">9 of 10 questions
+				<div class="question-button">
+					<div class="circle">?</div>
+					<div class="tooltip">Have you been threatened or blackmailed?</div>
+				</div>
+			</div>
+			<div class="fade-in-text">
+				9. He/She can scare me without laying a hand on me.
+						<div >
+							<div class="hover-blue">
+								<label><input onclick="nextQuestion()" type="radio" name="q9" value="1">Disagree Strongly</input><br></label>
+								</div>
+			
+								<div class="hover-blue">
+									<label><input onclick="nextQuestion()" type="radio" name="q9" value="2">Disagree Somewhat</input><br></label>
+								</div>
+			
+								<div class="hover-blue">
+									<label><input onclick="nextQuestion()" type="radio" name="q9" value="3">Disagree a little</input><br></label>
+								</div>
+			
+								<div class="hover-blue">
+									<label><input onclick="nextQuestion()" type="radio" name="q9" value="4">Agree a little</input><br></label>
+								</div>
+			
+								<div class="hover-blue">
+									<label><input onclick="nextQuestion()" type="radio" name="q9" value="5">Agree Somewhat</input><br></label>
+								</div>
+			
+								<div class="hover-blue">
+									<label><input onclick="nextQuestion()" type="radio" name="q9" value="6">Agree Strongly</input><br></label>
+								</div>
+						</div>
+			</div>
+		</div>
+	</div>
+
+<!--Question #10-->
+	<div class="card" id="question10" style="width: 50rem;display: none;">
+		<div class="card-body">
+			<div class="fade-in-text">
+				<div id="numofq">10 of 10 questions
+					<div class="question-button">
+						<div class="circle">?</div>
+						<div class="tooltip">Have they ever lost control of their actions after they looked at you this way?</div>
+					</div>
+				</div>
+				10. He/She has a look that goes straight through me and terrifies me.
+						<div >
+							<div class="hover-blue">
+								<label><input onclick="nextQuestion()" type="radio" name="q10" value="1">Disagree Strongly</input><br></label>
+								</div>
+			
+								<div class="hover-blue">
+									<label><input onclick="nextQuestion()" type="radio" name="q10" value="2">Disagree Somewhat</input><br></label>
+								</div>
+			
+								<div class="hover-blue">
+									<label><input onclick="nextQuestion()" type="radio" name="q10" value="3">Disagree a little</input><br></label>
+								</div>
+			
+								<div class="hover-blue">
+									<label><input onclick="nextQuestion()" type="radio" name="q10" value="4">Agree a little</input><br></label>
+								</div>
+			
+								<div class="hover-blue">
+									<label><input onclick="nextQuestion()" type="radio" name="q10" value="5">Agree Somewhat</input><br></label>
+								</div>
+			
+								<div class="hover-blue">
+									<label><input onclick="nextQuestion()" type="radio" name="q10" value="6">Agree Strongly</input><br></label>
+								</div>
+						</div>
+					
+			</div>
+		</div>
+	</div>
+</div>
+</form>
+<!--End Of Questions-->
+
+<!--Back and Next Buttons-->
+<div class="back-next-container" id="appear">
+	<button class="add-side-margins" onclick="previousQuestion()">Back</button>
+	<button class="add-side-margins" onclick="nextQuestion()">Next</button>
+</div>
+<!--Back and Next Buttons-->
+
+<!--Results Screen-->
+	<h1 id="result" class="result"></h1>
+
+	<!--Links to Resources-->
+	<div id= "container" class="container">
+		<div class="table-container">
+			<h2>Helpful Resources</h2>
+			<table>
+				<tr>
+					<th>Name</th>
+					<th>Resource</th>
+				</tr>
+				<tr>
+					<td>
+						Línea De Orientación Confidencial De La Oficina De La Procuradora De Mujeres
+					</td>
+					<td>
+						<a href="tel:7877222977">(787) 722-2977</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Proyecto MATRIA</td>
+					<td>
+						<a href="tel:7874890022">(787) 489-0022</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Línea PAS</td>
+					<td>
+						<a href="tel:18009810023">+1 (800) 981-0023</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Centro Ayuda Victimas de Violacion</td>
+					<td>
+						<a href="tel:7877652285">(787) 765-2285</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Other Helplines
+					</td>
+					<td>
+						<a href="https://findahelpline.com/">findahelpline.com</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<!--Links to Resources-->
+
+	<!--User is safe-->
+	<div id= "container-safe" class="container" >
+		<div class="table-container">
+			<h2>Advice</h2>
+			<table>
+				<tr>
+					<th>Category</th>
+					<th>Advice</th>
+				</tr>
+				<tr>
+					<td>Health</td>
+					<td>Great to know you are safe!</td>
+				</tr>
+				<tr>
+					<td>If you took this survey you must have your doubts.</td>
+					<td>Even though you are safe you should speak to your partner about your concerns in confidence and respect.</td>
+				</tr>
+				
+			</table>
+		</div>
+	</div>
+	<!--User is safe-->
+
+	<!--User in danger-->
+	<div id= "container-danger" class="container" >
+		<div class="table-container">
+			<h2>Advice</h2>
+			<table>
+				<tr>
+					<th>Category</th>
+					<th>Advice</th>
+				</tr>
+				<tr>
+					<td>Health</td>
+					<td>You are in a hostile relationship!</td>
+				</tr>
+				<tr>
+					<td>You are in a hostile relationship!</td>
+					<td>Please try to move away from your partner in a safe way since it can trigger a verbal/physical attack.</td>
+				</tr>
+				<tr>
+					<td>Your safety is our priority.</td>
+					<td>Please try to move away from your partner in a safe way since it can trigger a verbal/physical attack.</td>
+				</tr>
+				
+			</table>
+		</div>
+	</div>
+	<!--User in danger-->
+
+<!--End of Results Screen-->
+
+<!--DELETE Button-->
+
+<!--DELETE Button-->
+
+
+
+
+
+	<!--Bot Navigation Bar-->
+	<nav>
+		<div class="navbar-center">
+			<button type="button" id="deleteHistoryButton" class="btn btn-secondary btn-lg btn-block" >DELETE</button>
+		</div>
+	</nav>
+	<!--Bot Navigation Bar--> 
+
+
+
+
+
+</div>	
+
+<!--Script for Exit Button-->
+<script>
+	document.getElementById('deleteHistoryButton').addEventListener('click', function()
+	{
+  		sessionStorage.clear();
+  		window.location.href = 'https://www.google.com';
+		window.close();
+	});
+</script>
+<!--Script for Exit Button-->
+
+<!--Script for algorithm of questionaire-->
+<script src="algorithm.js">
+</script>
+<!--Script for algorithm of questionaire-->	
+
+</body>

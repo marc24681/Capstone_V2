@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Our Goals</title>
+    <link rel="stylesheet" href="style(goals).css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="background">
+
+	<!--Top Navigation Bar-->
+	<nav class="navbar">
+		<div class="navbar-left">
+		  <a href="index.html" class="logo"><img alt="G" src="new logo guarddv tech.jpg"></a>
+		</div>
+		<div class="navbar-center">
+			<a href="tel:7877222977" class="phone">Phone: (787) 722-2977</a>
+		</div>
+		<div class="navbar-right">
+		  <div class="dropdown">
+			<button class="dropbtn">Menu &#9662;</button>
+			<div class="dropdown-content">
+			  <a href="goals.html">Goals</a>
+			  <a href="resources.html">Resources</a>
+			  <a href="question.html">Survey</a>
+	</nav>
+	<!--Top Navigation Bar--> 
+
+      <div class="card text-center" style="margin-top: 100px;">
+
+        <div class="card-header">
+          Our Goals
+        </div>
+
+        <div class="card-body">
+          <h5 class="card-title">Project Mirror</h5>
+            <p class="card-text">The goal of this project is to develop a secure and anonymous web application that will help people identify if they are victims of domestic abuse. The web app will consist of a questionnaire designed to calculate the likelihood that someone is in a domestically violent relationship based on their answers. The questionnaire will be carefully crafted to ensure that it is effective in identifying domestic abuse while being sensitive to the emotional and psychological needs of the user.
+
+                The web app will be completely anonymous and designed to not appear in the user's browser history. This will help ensure that individuals in a domestically violent relationship can use the app without fear of being detected by their abuser.
+                
+                The primary goal of the web app is to provide a safe and confidential space for individuals experiencing domestic abuse to get information and support. By providing a discreet and effective way to identify if someone is in a domestically violent relationship, the web app can help users take the first steps towards protecting themselves and accessing support services. Additionally, the app will provide information on the different forms of domestic abuse and connect users with relevant resources and support services. 
+                
+                Ultimately, this project aims to reduce the incidence of domestic abuse by empowering individuals to take control of their situation and access the help they need.
+                </p>
+              <a href="question.html" class="btn btn-primary">Survey</a>
+        </div>
+      </div></br>
+	<!--Bot Navigation Bar-->
+	<nav>
+		<div class="navbar-center">
+			<button type="button" id="deleteHistoryButton" class="btn btn-secondary btn-lg btn-block" >DELETE</button>
+		</div>
+	</nav>
+	<!--Bot Navigation Bar--> 
+  </div>
+    <!--Script for Exit Button-->
+<script>
+	document.getElementById('deleteHistoryButton').addEventListener('click', function()
+	{
+  		sessionStorage.clear();
+  		window.location.href = 'https://www.google.com';
+		window.close();
+	});
+</script>
+<!--Script for Exit Button-->
+</body>
+
+</html>

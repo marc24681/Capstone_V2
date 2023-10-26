@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Mirror</title>
+    <link rel="stylesheet" href="style(index).css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="background">
+
+	<!--Top Navigation Bar-->
+	<nav class="navbar">
+		<div class="navbar-left">
+		  <a href="index.html" class="logo"><img alt="G" src="new logo guarddv tech.jpg"></a>
+		</div>
+		<div class="navbar-center">
+			<a href="tel:7877222977" class="phone">Phone: (787) 722-2977</a>
+		</div>
+		<div class="navbar-right">
+		  <div class="dropdown">
+			<button class="dropbtn">Menu &#9662;</button>
+			<div class="dropdown-content">
+			  <a href="goals.html">Goals</a>
+			  <a href="resources.html">Resources</a>
+			  <a href="question.html">Survey</a>
+	</nav>
+	<!--Top Navigation Bar--> 
+
+      <div class="card text-center" style="margin-top: 100px;">
+
+        <div class="card-header">
+          How is your relationship?
+        </div>
+
+        <div class="card-body">
+          <h5 class="card-title">Breaking Chains</h5>
+            <p class="card-text">You are not defined by the pain that has been inflicted upon you. You are strong, resilient, and deserving of healing and justice. I want you to know that you are not alone, and there is support and love surrounding you.</p>
+              <a href="question.html" class="btn btn-primary">Survey</a>
+        </div>
+      </div></br>
+
+
+	<!--Bot Navigation Bar-->
+	<nav>
+		<div class="navbar-center">
+			<button type="button" id="deleteHistoryButton" class="btn btn-secondary btn-lg btn-block" >DELETE</button>
+		</div>
+	</nav>
+	<!--Bot Navigation Bar--> 
+
+  </div>
+  <!--Script for Exit Button-->
+<script>
+	document.getElementById('deleteHistoryButton').addEventListener('click', function()
+	{
+  		sessionStorage.clear();
+  		window.location.href = 'https://www.google.com';
+		window.close();
+	});
+</script>
+<!--Script for Exit Button-->
+</body>
+
+</html>
