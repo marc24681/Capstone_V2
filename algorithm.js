@@ -1,5 +1,3 @@
-
-
 function Submit() {
 	const form = document.getElementById('questionnaire');
     const resultElement = document.getElementById('result');
@@ -7,7 +5,7 @@ function Submit() {
     const tablessafe = document.getElementById('container-safe');
     const tablesdanger = document.getElementById('container-danger');
 
-		const q1 = isValid(parseInt(form.elements['q1'].value));
+	const q1 = isValid(parseInt(form.elements['q1'].value));
 	const q2 = isValid(parseInt(form.elements['q2'].value));
     const q3 = isValid(parseInt(form.elements['q3'].value));
 	const q4 = isValid(parseInt(form.elements['q4'].value));
